@@ -90,13 +90,14 @@
             // 
             // btTru
             // 
+            this.btTru.ForeColor = System.Drawing.Color.Maroon;
             this.btTru.Location = new System.Drawing.Point(322, 211);
             this.btTru.Name = "btTru";
             this.btTru.Size = new System.Drawing.Size(59, 40);
             this.btTru.TabIndex = 2;
             this.btTru.Text = "Trừ";
             this.btTru.UseVisualStyleBackColor = true;
-            
+            this.btTru.Click += new System.EventHandler(this.btTru_Click);
             // 
             // btCong
             // 

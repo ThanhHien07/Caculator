@@ -25,22 +25,33 @@ namespace Caculator
         
         private void btCong_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             if (txtA.Text != String.Empty)
+=======
+            if(txtA.Text!=String.Empty && txtB.Text!=String.Empty)
+>>>>>>> feature-ca
             {
                 double a = double.Parse(txtA.Text);
                 double b = double.Parse(txtB.Text);
                 double c = a + b;
                 txtKQ.Text = c.ToString();
             }
+<<<<<<< HEAD
+=======
+            
+
+>>>>>>> feature-ca
         }
-        private void buton1_Click(object sender, EventArgs e)
+        
+   
+
+        private void btTru_Click(object sender, EventArgs e)
         {
             double a = double.Parse(txtA.Text);
             double b = double.Parse(txtB.Text);
-            double c = a + b;
+            double c = a - b;
             txtKQ.Text = c.ToString();
 
         }
-
     }
 }
