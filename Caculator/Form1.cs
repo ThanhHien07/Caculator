@@ -25,11 +25,13 @@ namespace Caculator
         
         private void btCong_Click(object sender, EventArgs e)
         {
-            double a = double.Parse(txtA.Text);
-            double b = double.Parse(txtB.Text);
-            double c = a + b;
-            txtKQ.Text = c.ToString();
-
+            if (txtA.Text != String.Empty)
+            {
+                double a = double.Parse(txtA.Text);
+                double b = double.Parse(txtB.Text);
+                double c = a + b;
+                txtKQ.Text = c.ToString();
+            }
         }
         private void buton1_Click(object sender, EventArgs e)
         {
