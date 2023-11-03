@@ -31,14 +31,16 @@ namespace Caculator
             txtKQ.Text = c.ToString();
 
         }
-        private void buton1_Click(object sender, EventArgs e)
+        
+   
+
+        private void btTru_Click(object sender, EventArgs e)
         {
             double a = double.Parse(txtA.Text);
             double b = double.Parse(txtB.Text);
-            double c = a + b;
+            double c = a - b;
             txtKQ.Text = c.ToString();
 
         }
-
     }
 }
