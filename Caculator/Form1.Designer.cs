@@ -30,8 +30,12 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtA = new System.Windows.Forms.TextBox();
+            this.txtB = new System.Windows.Forms.TextBox();
+            this.txtKQ = new System.Windows.Forms.Label();
+            this.txt = new System.Windows.Forms.TextBox();
+            this.btTru = new System.Windows.Forms.Button();
+            this.btCong = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -50,29 +54,71 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(28, 13);
             this.label2.TabIndex = 0;
-            this.label2.Text = "số A";
+            this.label2.Text = "số B";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // textBox1
+            // txtA
             // 
-            this.textBox1.Location = new System.Drawing.Point(142, 34);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtA.Location = new System.Drawing.Point(142, 34);
+            this.txtA.Name = "txtA";
+            this.txtA.Size = new System.Drawing.Size(181, 20);
+            this.txtA.TabIndex = 1;
             // 
-            // textBox2
+            // txtB
             // 
-            this.textBox2.Location = new System.Drawing.Point(142, 83);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 1;
+            this.txtB.Location = new System.Drawing.Point(142, 86);
+            this.txtB.Name = "txtB";
+            this.txtB.Size = new System.Drawing.Size(181, 20);
+            this.txtB.TabIndex = 1;
+            // 
+            // txtKQ
+            // 
+            this.txtKQ.AutoSize = true;
+            this.txtKQ.Location = new System.Drawing.Point(32, 146);
+            this.txtKQ.Name = "txtKQ";
+            this.txtKQ.Size = new System.Drawing.Size(44, 13);
+            this.txtKQ.TabIndex = 0;
+            this.txtKQ.Text = "Kết quả";
+            this.txtKQ.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // txt
+            // 
+            this.txt.Location = new System.Drawing.Point(142, 143);
+            this.txt.Name = "txt";
+            this.txt.Size = new System.Drawing.Size(181, 20);
+            this.txt.TabIndex = 1;
+            // 
+            // btTru
+            // 
+            this.btTru.Location = new System.Drawing.Point(322, 211);
+            this.btTru.Name = "btTru";
+            this.btTru.Size = new System.Drawing.Size(59, 40);
+            this.btTru.TabIndex = 2;
+            this.btTru.Text = "Trừ";
+            this.btTru.UseVisualStyleBackColor = true;
+            
+            // 
+            // btCong
+            // 
+            this.btCong.Location = new System.Drawing.Point(197, 211);
+            this.btCong.Name = "btCong";
+            this.btCong.Size = new System.Drawing.Size(59, 40);
+            this.btCong.TabIndex = 2;
+            this.btCong.Text = "Cộng";
+            this.btCong.UseVisualStyleBackColor = true;
+            this.btCong.Click += new System.EventHandler(this.btCong_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(445, 339);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btCong);
+            this.Controls.Add(this.btTru);
+            this.Controls.Add(this.txt);
+            this.Controls.Add(this.txtB);
+            this.Controls.Add(this.txtA);
+            this.Controls.Add(this.txtKQ);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
@@ -86,8 +132,12 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtA;
+        private System.Windows.Forms.TextBox txtB;
+        private System.Windows.Forms.Label txtKQ;
+        private System.Windows.Forms.TextBox txt;
+        private System.Windows.Forms.Button btTru;
+        private System.Windows.Forms.Button btCong;
     }
 }
 
