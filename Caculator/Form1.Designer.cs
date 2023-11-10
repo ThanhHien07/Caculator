@@ -32,8 +32,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtA = new System.Windows.Forms.TextBox();
             this.txtB = new System.Windows.Forms.TextBox();
-            this.txtKQ = new System.Windows.Forms.Label();
-            this.txt = new System.Windows.Forms.TextBox();
+            this.lbKQ = new System.Windows.Forms.Label();
+            this.txtKQ = new System.Windows.Forms.TextBox();
             this.btTru = new System.Windows.Forms.Button();
             this.btCong = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -71,22 +71,22 @@
             this.txtB.Size = new System.Drawing.Size(181, 20);
             this.txtB.TabIndex = 1;
             // 
+            // lbKQ
+            // 
+            this.lbKQ.AutoSize = true;
+            this.lbKQ.Location = new System.Drawing.Point(32, 146);
+            this.lbKQ.Name = "lbKQ";
+            this.lbKQ.Size = new System.Drawing.Size(44, 13);
+            this.lbKQ.TabIndex = 0;
+            this.lbKQ.Text = "Kết quả";
+            this.lbKQ.Click += new System.EventHandler(this.label2_Click);
+            // 
             // txtKQ
             // 
-            this.txtKQ.AutoSize = true;
-            this.txtKQ.Location = new System.Drawing.Point(32, 146);
+            this.txtKQ.Location = new System.Drawing.Point(142, 143);
             this.txtKQ.Name = "txtKQ";
-            this.txtKQ.Size = new System.Drawing.Size(44, 13);
-            this.txtKQ.TabIndex = 0;
-            this.txtKQ.Text = "Kết quả";
-            this.txtKQ.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // txt
-            // 
-            this.txt.Location = new System.Drawing.Point(142, 143);
-            this.txt.Name = "txt";
-            this.txt.Size = new System.Drawing.Size(181, 20);
-            this.txt.TabIndex = 1;
+            this.txtKQ.Size = new System.Drawing.Size(181, 20);
+            this.txtKQ.TabIndex = 1;
             // 
             // btTru
             // 
@@ -116,10 +116,10 @@
             this.ClientSize = new System.Drawing.Size(445, 339);
             this.Controls.Add(this.btCong);
             this.Controls.Add(this.btTru);
-            this.Controls.Add(this.txt);
+            this.Controls.Add(this.txtKQ);
             this.Controls.Add(this.txtB);
             this.Controls.Add(this.txtA);
-            this.Controls.Add(this.txtKQ);
+            this.Controls.Add(this.lbKQ);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
@@ -135,8 +135,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtA;
         private System.Windows.Forms.TextBox txtB;
-        private System.Windows.Forms.Label txtKQ;
-        private System.Windows.Forms.TextBox txt;
+        private System.Windows.Forms.Label lbKQ;
+        private System.Windows.Forms.TextBox txtKQ;
         private System.Windows.Forms.Button btTru;
         private System.Windows.Forms.Button btCong;
     }

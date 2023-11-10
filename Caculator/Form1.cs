@@ -22,36 +22,24 @@ namespace Caculator
 
         }
 
-        
+
         private void btCong_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
             if (txtA.Text != String.Empty)
-=======
-            if(txtA.Text!=String.Empty && txtB.Text!=String.Empty)
->>>>>>> feature-ca
-            {
-                double a = double.Parse(txtA.Text);
-                double b = double.Parse(txtB.Text);
-                double c = a + b;
-                txtKQ.Text = c.ToString();
-            }
-<<<<<<< HEAD
-=======
-            
-
->>>>>>> feature-ca
+                if (txtA.Text != String.Empty && txtB.Text != String.Empty)
+                {
+                    int a = int.Parse(txtA.Text);
+                    int b = int.Parse(txtB.Text);
+                    Caculation c = new Caculation(a, b);
+                    c.Execute("+");
+                }
         }
-        
-   
-
         private void btTru_Click(object sender, EventArgs e)
         {
-            double a = double.Parse(txtA.Text);
-            double b = double.Parse(txtB.Text);
-            double c = a - b;
-            txtKQ.Text = c.ToString();
-
+            int a = int.Parse(txtA.Text);
+            int b = int.Parse(txtB.Text);
+            Caculation c = new Caculation(a, b);
+            c.Execute("-");
         }
     }
 }
